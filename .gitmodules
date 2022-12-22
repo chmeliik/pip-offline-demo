@@ -1,0 +1,4 @@
+[submodule "atomic-reactor/atomic-reactor"]
+	path = atomic-reactor/atomic-reactor
+	url = https://github.com/containerbuildsystem/atomic-reactor.git
+	shallow = true
