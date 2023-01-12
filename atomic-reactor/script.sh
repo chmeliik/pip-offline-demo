@@ -4,7 +4,7 @@ set -o errexit -o nounset -o pipefail -o xtrace
 # fetch dependencies, modify requirements.txt, set environment variables
 cachi2 fetch-deps \
     --source ./atomic-reactor \
-    --package '{
+    '{
         "type":"pip",
         "requirements_files": ["requirements.txt"],
         "requirements_build_files": ["requirements-build.txt", "requirements-pip.txt"]
