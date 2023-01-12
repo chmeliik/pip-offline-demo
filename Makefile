@@ -5,7 +5,7 @@ all: venv submodules helper-containers
 venv:
 	virtualenv venv
 	venv/bin/pip install pip-tools
-	venv/bin/pip install 'cachi2 @ git+https://github.com/chmeliik/cachi2.git@pip-support'
+	venv/bin/pip install 'cachi2 @ git+https://github.com/containerbuildsystem/cachi2.git'
 	curl https://raw.githubusercontent.com/containerbuildsystem/cachito/master/bin/pip_find_builddeps.py -O
 	chmod +x ./pip_find_builddeps.py
 	mv ./pip_find_builddeps.py venv/bin
